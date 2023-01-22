@@ -1,11 +1,19 @@
+
 import json
 
-for i in range(7777):
+size = input("Enter the size of your collection: ")
+
+name = input("Enter the the name of your collection: ")
+
+symbol = input("Enter the symbol of your collection: ")
+
+description = input("Enter the description of your collection: ")
+for i in range(int(size)):
     y = i+1
     data = {
-        "name": "Number #{}".format(y),
-        "symbol": "BONKTICKET",
-        "description": "THAT BONK TICKET WAITS TO GET YOU RICH.",
+        "name": "{} {}".format(name, y),
+        "symbol": symbol,
+        "description": description,
         "image": "{}.png".format(i),
         "attributes": [
             {
